@@ -1,4 +1,6 @@
 #![forbid(unsafe_code)]
+#![cfg_attr(not(test), no_std)]
+
 use tpm2_rs_base::commands::*;
 use tpm2_rs_base::constants::{TPM2Cap, TPM2PT};
 use tpm2_rs_base::errors::{TpmRcError, TpmResult};

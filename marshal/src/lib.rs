@@ -1,4 +1,5 @@
 #![forbid(unsafe_code)]
+#![cfg_attr(not(test), no_std)]
 
 use core::mem::size_of;
 
